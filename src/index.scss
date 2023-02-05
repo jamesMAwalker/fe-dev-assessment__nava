@@ -1,0 +1,89 @@
+:root {
+  // TYPOGRAPHY
+  --text-pageheader: 2rem;
+  --text-header: 1.75rem;
+  --text-subheader: 1.25rem;
+
+  // COLORS
+  --color-primary: hsl(220, 54%, 32%);
+  --color-primary-light: hsl(212, 61%, 38%);
+
+  --color-neutral: hsl(0, 0%, 59%);
+  --color-neutral-light: hsl(0, 0%, 90%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 11%);
+  --color-black-tr: hsla(0, 0%, 11%, 0.7);
+
+  // SHAPE
+  --radius-md: 5px;
+  --radius-lg: 10px;
+
+  // LAYOUT
+  --container-width: 90ch;
+  --min-container-width: 30ch;
+  --content-padding: 2rem;
+}
+
+html {
+  font-family: "Segoe UI", system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  line-height: 1.5;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: .5rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+
+  &.submit {
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition: none;
+  }
+}
