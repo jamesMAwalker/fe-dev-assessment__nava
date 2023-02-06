@@ -1,4 +1,4 @@
-import { Household } from './components/household'
+import { Household } from './components/household/household'
 import { Layout } from './layout/layout'
 
 function App() {
